@@ -10,3 +10,5 @@ vim.keymap.set("n", "<leader>lx", function()
     underline = isLspDiagnosticsVisible,
   })
 end)
+
+vim.keymap.set({ "n", "i" }, "<leader>.", "<cmd>Telescope current_buffer_fuzzy_find<cr>")
